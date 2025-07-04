@@ -82,26 +82,3 @@ void main(List<String> arguments) {
     print("Error: $e");
   }
 }
-
-// void checkout(List<CartItem> cartList) {
-//   if (cartList.isNotEmpty) {
-//     print("** Shipment notice **");
-//     for (var i = 0; i < cartList.length; i++) {
-//       if (cartList[i].product.isShippable()) {
-//         print(
-//             "${cartList[i].quantity}X ${cartList[i].product.name}       ${cartList[i].product.shippable!.weight * cartList[i].quantity}kg");
-//       }
-//     }
-//     print("\n** Checkout receipt **");
-//     for (var item in cartList) {
-//       print(
-//           "${item.quantity}X ${item.product.name}       ${item.quantity * item.product.price}EGP");
-//     }
-//     print("\n----------------------")
-//     print(
-//         "Subtotal: ${cartList.fold(0.0, (total, item) => total + item.quantity * item.product.price)}EGP");
-//     print("Total: ${cartList.fold(0.0, (total, item) => total + item.quantity * item.product.price)}EGP");
-//   } else {
-//     print('Cart is empty.');
-//   }
-// }
